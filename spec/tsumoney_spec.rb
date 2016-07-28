@@ -17,7 +17,7 @@ describe Tsumoney do
     it 'Retorna um Ataque crítico se o ataque for maior que 8000' do
       tsumoney.mana = 1000
       tsumoney.money = 10
-      expect(tsumoney.attack[@regex,1].strip).to eq "Crítico"
+      expect(tsumoney.attack[@regex,1].to_s.strip).to eq "Crítico"
       expect(tsumoney.attack[@regex,2].to_i).to be > 8000
     end
 
