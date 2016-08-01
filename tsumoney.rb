@@ -8,7 +8,7 @@ class Tsumoney
 
   def attack
     a = @money * @mana
-    "Ataque#{" Crítico" if a > 8000}: #{a}"
+    "Ataque#{" Crítico" if a > 7000}: #{a}"
   end
 
 end
